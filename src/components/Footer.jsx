@@ -4,7 +4,7 @@ import { RiInstagramFill } from "react-icons/ri";
 
 export default function Footer() {
   return (<>
-  <div className="bottom-0 h-30 w-full bg-gray-500 ">
+  <div className="bottom-0 h-30 w-full bg-gray-700 ">
     <div className="flex justify-center gap-8">
               <span className="rounded-full border-sky-400 border-2 p-2 hover:scale-125 transition duration-300 mt-4">
                 <a

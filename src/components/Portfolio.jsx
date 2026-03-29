@@ -5,6 +5,8 @@ import About from "../sections/About";
 import Services from "../sections/Services";
 import Projects from "../sections/Projects";
 import Contact from "../sections/Contact";
+import Skills from "../sections/Skills";
+import Certificates from "../sections/Certificates";
 
 export default function Portfolio() {
   return (
@@ -12,8 +14,10 @@ export default function Portfolio() {
       <Navbar />
       <Home/>
       <About/>
-      <Services/>
+      <Skills/>
       <Projects/>
+      <Services/>
+      <Certificates/>
       <Contact/>
       <Footer />
     </div>

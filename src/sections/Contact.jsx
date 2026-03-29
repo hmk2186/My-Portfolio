@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="px-4 py-10">
+    <section id="contact" className="px-4 py-10 bg-[#0f172a]">
       {/* Heading */}
       <h1 className="text-3xl font-bold text-white mt-10 text-center">
         Contact{" "}
