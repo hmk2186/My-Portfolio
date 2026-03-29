@@ -16,7 +16,7 @@ export default function Navbar() {
         </button>
         <h2 className="mx-8 text-2xl font-bold ">
           Het{" "}
-          <span className="text-2xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+          <span className="text-2xl font-bold bg-gradient-to-r from-sky-400 to-purple-500 bg-clip-text text-transparent">
             Kanjariya
           </span>
         </h2>
