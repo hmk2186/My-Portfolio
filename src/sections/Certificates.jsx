@@ -1,6 +1,8 @@
 import { useState } from "react";
 import dev from "../assets/images/dev.png";
 import dsa from "../assets/images/dsa.png";
+import { FaRegArrowAltCircleLeft } from "react-icons/fa";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 export default function Certificates() {
   const certificates = [dev, dsa];
@@ -24,16 +26,6 @@ export default function Certificates() {
       </h2>
 
       <div className="relative flex items-center justify-center">
-        {/* Left Arrow */}
-        <button
-          onClick={prev}
-          className="absolute left-4 text-xl bg-cyan-400/10  
-           hover:bg-cyan-400/30 
-          hover:shadow-[0_0_15px_#22d3ee] transition"
-        >
-          ⬅
-        </button>
-
         {/* Image */}
         <img
           src={certificates[index]}
@@ -42,17 +34,29 @@ export default function Certificates() {
           hover:scale-105 hover:border-cyan-400 
           hover:shadow-[0_0_15px_#22d3ee] transition"
         />
-
-        {/* Right Arrow */}
-        <button
-          onClick={next}
-          className="absolute right-4 text-xl bg-cyan-400/10 
-          hover:bg-cyan-400/30 
-          hover:shadow-[0_0_15px_#22d3ee] transition"
-        >
-          ➡
-        </button>
       </div>
+      {/* Left Arrow */}
+      <button
+        onClick={prev}
+        className="absolute left-10  mt-2 flex items-center gap-2
+           hover:bg-cyan-400/30 
+           text-sky-400
+           text-3xl
+          hover:shadow-[0_0_15px_#22d3ee] transition"
+      >
+        <FaRegArrowAltCircleLeft />
+        <span className="text-xl">Prev</span>
+      </button>
+      {/* Right Arrow */}
+      <button
+        onClick={next}
+        className="absolute right-10 text-3xl mt-2 flex items-center gap-2
+          hover:bg-cyan-400/30 
+          text-sky-400
+          hover:shadow-[0_0_15px_#22d3ee] transition"
+      ><FaRegArrowAltCircleRight />
+        <span className="text-xl"> Next</span>
+      </button>
     </section>
   );
 }
