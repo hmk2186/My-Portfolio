@@ -15,41 +15,36 @@ export default function Contact() {
           <input
             type="text"
             placeholder="Full Name"
-            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white 
-            focus:outline-none focus:shadow-[0_0_10px_#38bdf8]"
+            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white "
           />
 
           <input
             type="email"
             placeholder="Email"
-            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white 
-            focus:outline-none focus:shadow-[0_0_10px_#38bdf8]"
+            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white "
           />
 
           <input
             type="text"
             placeholder="Phone Number"
-            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white 
-            focus:outline-none focus:shadow-[0_0_10px_#38bdf8]"
+            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white "
           />
 
           <input
             type="text"
             placeholder="Subject"
-            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white 
-            focus:outline-none focus:shadow-[0_0_10px_#38bdf8]"
+            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white "
           />
 
           <textarea
             placeholder="Your Message"
             rows="4"
-            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white 
-            focus:outline-none focus:shadow-[0_0_10px_#38bdf8]"
+            className="px-4 py-3 rounded-xl bg-transparent border-2 border-sky-400 text-white "
           ></textarea>
 
           <button
             type="submit"
-            className=" px-6 py-2 mt-4 bg-sky-400 text-black font-bold rounded-full border-2 border-sky-400 shadow-[0_0_10px_#38bdf8,0_0_5px_#38bdf8] transition duration-300 hover:bg-transparent hover:text-sky-400 hover:shadow-none hover:scale-105"
+            className=" px-6 py-2 mt-4 bg-sky-400 text-black font-bold rounded-full border-2 border-sky-400 transition duration-300 hover:bg-transparent hover:text-sky-400 hover:scale-105"
           >
             Send Message
           </button>

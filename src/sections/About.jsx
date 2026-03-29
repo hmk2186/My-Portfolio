@@ -14,7 +14,7 @@ export default function About() {
         <img
           src={myImage}
           alt="profile"
-          className="w-64 h-64  rounded-full object-cover mt-2 border-4 border-sky-400 shadow-[0_0_15px_#38bdf8,0_0_5px_#38bdf8] "
+          className="w-64 h-64  rounded-full object-cover mt-2 border-4 border-sky-400"
           style={{
             animation: "float 3s ease-in-out infinite",
           }}
@@ -37,7 +37,7 @@ export default function About() {
         
         <div className="flex gap-8 justify-center mt-4">
           <a href="#projects">
-          <button className=" px-6 py-2 mt-4 bg-sky-400 text-black font-bold rounded-full border-2 border-sky-400 shadow-[0_0_10px_#38bdf8,0_0_5px_#38bdf8] transition duration-300 hover:bg-transparent hover:text-sky-400 hover:shadow-none hover:scale-105">
+          <button className=" px-6 py-2 mt-4 bg-sky-400 text-black font-bold rounded-full border-2 border-sky-400 transition duration-300 hover:bg-transparent hover:text-sky-400 hover:scale-105">
             Read More
           </button>
           </a>

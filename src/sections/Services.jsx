@@ -8,7 +8,7 @@ export default function Services() {
       <h3 className="text-white text-4xl font-bold text-center">
         Services
       </h3>
-      <div className="card-1 rounded-3xl border-2 px-4 py-2 w-70 h-100 text-center border-sky-400 text-3xl text-white font-semibold shadow-[0_0_10px_#38bdf8,0_0_5px_#38bdf8] hover:bg-sky-500 hover:text-black transition duration-300">
+      <div className="card-1 rounded-3xl border-2 px-4 py-2 w-70 h-100 text-center border-sky-400 text-3xl text-white font-semibold hover:bg-sky-500 hover:text-black transition duration-300">
         <div className="flex justify-center text-5xl mt-8 my-4">
           <IoLogoFigma />
         </div>
@@ -20,7 +20,7 @@ export default function Services() {
           laborum.
         </p>
       </div>
-      <div className="card-1 rounded-3xl border-2 px-4 py-2 w-70 mt-4 h-100 text-center border-sky-400 text-3xl text-white font-semibold shadow-[0_0_10px_#38bdf8,0_0_5px_#38bdf8] hover:bg-sky-500 hover:text-black transition duration-300">
+      <div className="card-1 rounded-3xl border-2 px-4 py-2 w-70 mt-4 h-100 text-center border-sky-400 text-3xl text-white font-semibold hover:bg-sky-500 hover:text-black transition duration-300">
         <div className="flex justify-center text-5xl mt-8 my-4">
           <FaCode />
         </div>
@@ -28,7 +28,7 @@ export default function Services() {
         Development
         <p className="text-sm mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita facilis possimus consequuntur facere cum odio ipsam incidunt doloremque omnis eius deserunt voluptatum asperiores nesciunt repellat ab exercitationem, ducimus iusto.</p>
       </div>
-      <div className="card-1 rounded-3xl border-2 px-4 w-70 py-2 mt-4 h-100 text-center border-sky-400 text-3xl text-white font-semibold shadow-[0_0_10px_#38bdf8,0_0_5px_#38bdf8] hover:bg-sky-500 hover:text-black transition duration-300">
+      <div className="card-1 rounded-3xl border-2 px-4 w-70 py-2 mt-4 h-100 text-center border-sky-400 text-3xl text-white font-semibold hover:bg-sky-500 hover:text-black transition duration-300">
         <div className="flex justify-center text-5xl mt-8 my-4">
           <BiCodeCurly />
         </div>

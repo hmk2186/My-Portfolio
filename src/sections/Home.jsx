@@ -31,7 +31,7 @@ export default function Home() {
           accusantium nisi quos nemo exercitationem.
         </p>
         <div className="flex justify-center gap-8 mt-4">
-          <span className="rounded-full border-sky-400 border-2 p-2 hover:scale-125 transition duration-300 hover:shadow-[0_0_12px_#38bdf8,0_0_20px_#38bdf8]">
+          <span className="rounded-full border-sky-400 border-2 p-2 hover:scale-125 transition duration-300 ">
             <a
               href="https://github.com/hmk2186"
               target="_blank"
@@ -40,7 +40,7 @@ export default function Home() {
               <FaGithub />
             </a>
           </span>
-          <span className="rounded-full border-sky-400 border-2 p-2 hover:scale-125 transition duration-300 hover:shadow-[0_0_12px_#38bdf8,0_0_20px_#38bdf8]">
+          <span className="rounded-full border-sky-400 border-2 p-2 hover:scale-125 transition duration-300 ">
             <a
               href="https://www.linkedin.com/in/het-kanjariya-cte-gecbvn-ce-a48087304/"
               target="_blank"
@@ -49,7 +49,7 @@ export default function Home() {
               <FaLinkedin />
             </a>
           </span>
-          <span className="rounded-full border-sky-400 border-2 p-2 hover:scale-125 transition duration-300 hover:shadow-[0_0_12px_#38bdf8,0_0_20px_#38bdf8]">
+          <span className="rounded-full border-sky-400 border-2 p-2 hover:scale-125 transition duration-300 ">
             <a
               href="https://www.instagram.com/_.het._.kanjariya._/"
               target="_blank"
@@ -61,12 +61,12 @@ export default function Home() {
         </div>
         <div className="flex gap-8 justify-center mt-4">
           <a href="#contact">
-          <button className=" px-6 py-2 mt-4 bg-sky-400 text-black font-bold rounded-full border-2 border-sky-400 shadow-[0_0_10px_#38bdf8,0_0_5px_#38bdf8] transition duration-300 hover:bg-transparent hover:text-sky-400 hover:shadow-none hover:scale-105">
+          <button className=" px-6 py-2 mt-4 bg-sky-400 text-black font-bold rounded-full border-2 border-sky-400 transition duration-300 hover:bg-transparent hover:text-sky-400 hover:scale-105">
             Hire Me
           </button>
           </a>
           <a href="mailto:kanjariyahet24@gmail.com">
-          <button className="px-6 py-2 mt-4 border-2 border-sky-400 text-sky-400 font-bold rounded-full transition duration-300 hover:bg-sky-400 hover:text-black hover:shadow-[0_0_10px_#38bdf8,0_0_5px_#38bdf8] hover:scale-105">
+          <button className="px-6 py-2 mt-4 border-2 border-sky-400 text-sky-400 font-bold rounded-full transition duration-300 hover:bg-sky-400 hover:text-black hover:scale-105">
             Contact
           </button>
           </a>
@@ -76,7 +76,7 @@ export default function Home() {
         <img
           src={myImage}
           alt="profile"
-          className="w-64 h-64  rounded-full object-cover mt-2 border-4 border-sky-400 shadow-[0_0_15px_#38bdf8,0_0_5px_#38bdf8] "
+          className="w-64 h-64  rounded-full object-cover mt-2 border-4 border-sky-400"
           style={{
             animation: "float 3s ease-in-out infinite",
           }}
