@@ -57,11 +57,9 @@ import todo from "../assets/images/todo.jpg";
 //   );
 // }
 
-
 import { useState } from "react";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
-
 
 const projects = [
   {
@@ -98,64 +96,83 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="bg-[oklch(28.2%_0.091_267.935)]/70 text-white py-20 flex flex-col items-center"
+      className="bg-[oklch(28.2%_0.091_267.935)]/70 text-white py-20 flex flex-col items-center h-180 md:h-[720px] w-80 mx-auto md:w-full"
     >
-      <h2 className="text-4xl font-bold mb-8">Projects</h2>
+      <h2 className="text-4xl font-bold my-4">Projects</h2>
 
-      {/* Card */}
-      <div className="bg-[#1e2a5a] border-2 border-cyan-400 rounded-3xl p-4 w-[320px] text-center shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_#22d3ee] hover:scale-105">
+      {/* 🔴 MOBILE VIEW (Slider) */}
+      <div className="md:hidden">
+        <div className="bg-[#1e2a5a] border-2 border-cyan-400 h-110 rounded-3xl p-6 mt-4 w-auto text-center shadow-lg transition-all duration-500 hover:shadow-[0_0_25px_#22d3ee] hover:scale-105">
+          <img
+            src={projects[index].img}
+            alt="project"
+            className="w-50 h-40 object-cover mx-auto mb-4 rounded"
+          />
 
-        <img
-          src={projects[index].img}
-          alt="project"
-          className="w-50 h-40 object-cover mx-auto mb-4 rounded"
-        />
+          <h3 className="text-2xl font-bold mb-3">{projects[index].title}</h3>
 
-        <h3 className="text-2xl font-bold mb-3">
-          {projects[index].title}
-        </h3>
+          <p className="text-gray-300 text-sm mb-5">{projects[index].desc}</p>
 
-        <p className="text-gray-300 text-sm mb-5">
-          {projects[index].desc}
-        </p>
-
-        <a
-          href={projects[index].link}
-          target="_blank"
-          rel="noreferrer"
-          className="bg-cyan-400 text-black px-5 py-2 rounded-full hover:bg-cyan-300 transition"
-        >
-          Review Project
-        </a>
-
-        {/* 🔥 Buttons inside card */}
-        <div className="flex justify-between mt-6">
-          <button
-            onClick={prev}
-            className="text-black px-4 py-2 text-4xl text-sky-400 rounded-full hover:scale-110 transition"
+          <a
+            href={projects[index].link}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-cyan-400 text-black px-5 py-2 rounded-full hover:bg-cyan-300 transition"
           >
-            <FaRegArrowAltCircleLeft />
-          </button>
+            Review Project
+          </a>
 
-          <button
-            onClick={next}
-            className="text-black px-4 py-2 text-4xl text-sky-400 rounded-full hover:scale-110 transition"
-          >
-            <FaRegArrowAltCircleRight />
-          </button>
+          <div className="flex justify-between mt-6">
+            <button onClick={prev} className="text-4xl text-sky-400">
+              <FaRegArrowAltCircleLeft />
+            </button>
+
+            <button onClick={next} className="text-4xl text-sky-400">
+              <FaRegArrowAltCircleRight />
+            </button>
+          </div>
         </div>
+
+        {/* Dots */}
+        {/* <div className="flex gap-2 mt-6 justify-center">
+      {projects.map((_, i) => (
+        <span
+          key={i}
+          onClick={() => setIndex(i)}
+          className={`h-2 w-2 cursor-pointer rounded-full ${
+            i === index ? "bg-cyan-400" : "bg-gray-500"
+          }`}
+        />
+      ))}
+    </div> */}
       </div>
 
-      {/* Dots */}
-      <div className="flex gap-2 mt-6">
-        {projects.map((_, i) => (
-          <span
+      {/* 🔵 DESKTOP VIEW (Grid) */}
+      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 max-w-5xl px-6 h-300">
+        {projects.map((project, i) => (
+          <div
             key={i}
-            onClick={() => setIndex(i)}
-            className={`h-2 w-2 cursor-pointer rounded-full ${
-              i === index ? "bg-cyan-400" : "bg-gray-500"
-            }`}
-          />
+            className="bg-[#1e2a5a] border-2 border-cyan-400 rounded-3xl p-4 text-center shadow-lg hover:shadow-[0_0_10px_#22d3ee] hover:scale-100 transition"
+          >
+            <img
+              src={project.img}
+              alt="project"
+              className="w-50 h-40  mx-auto object-cover mb-4 rounded "
+            />
+
+            <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+
+            <p className="text-gray-300 text-sm mb-4">{project.desc}</p>
+
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="bg-cyan-400 text-black px-4 py-2 rounded-full hover:bg-cyan-300 transition"
+            >
+              Review Project
+            </a>
+          </div>
         ))}
       </div>
     </section>

@@ -43,7 +43,7 @@ export default function Footer() {
     <footer className="w-full bg-gray-800 text-white py-8 px-4">
       
       {/* Main Footer Content */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="max-w-xl mx-auto flex flex-col justify-between items-center gap-6">
 
         {/* Middle - Navigation Links */}
         <div className="flex flex-wrap justify-center gap-6 text-sm">

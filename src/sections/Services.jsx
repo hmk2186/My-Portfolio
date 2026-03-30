@@ -6,9 +6,10 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="flex flex-wrap justify-center gap-4 px-4 py-15 bg-[#0f172a]"
+      className="py-20 bg-[#0f172a] md:h-[720px]"
     >
-      <h3 className="text-white text-4xl font-bold text-center">Services</h3>
+      <h3 className="text-white text-4xl font-bold text-center mt-8 ">Services</h3>
+      <div className="flex flex-wrap justify-center items-center mt-16 gap-8" >
       <div className="card-1 rounded-3xl border-2 px-4 py-2 w-70 h-90 text-center border-sky-400 text-3xl text-white font-semibold hover:bg-sky-500 hover:text-black transition duration-300">
         <div className="flex justify-center text-5xl mt-8 my-4">
           <IoLogoFigma />
@@ -20,7 +21,7 @@ export default function Services() {
           visually engaging components for better usability.
         </p>
       </div>
-      <div className="card-2 rounded-3xl border-2 px-4 py-2 w-70 mt-4 h-90 text-center border-sky-400 text-3xl text-white font-semibold hover:bg-sky-500 hover:text-black transition duration-300">
+      <div className="card-2 rounded-3xl border-2 px-4 py-2 w-70 h-90 text-center border-sky-400 text-3xl text-white font-semibold hover:bg-sky-500 hover:text-black transition duration-300">
         <div className="flex justify-center text-5xl mt-8 my-4">
           <FaCode />
         </div>
@@ -33,7 +34,7 @@ export default function Services() {
           seamlessly across all devices.
         </p>
       </div>
-      <div className="card-3 rounded-3xl border-2 px-4 w-70 py-2 mt-4 h-90 text-center border-sky-400 text-3xl text-white font-semibold hover:bg-sky-500 hover:text-black transition duration-300">
+      <div className="card-3 rounded-3xl border-2 px-4 w-70 py-2 h-90 text-center border-sky-400 text-3xl text-white font-semibold hover:bg-sky-500 hover:text-black transition duration-300">
         <div className="flex justify-center text-5xl mt-8 my-4">
           <BiCodeCurly />
         </div>
@@ -44,6 +45,7 @@ export default function Services() {
           authentication, and server-side logic. I focus on performance,
           scalability, and secure data handling.
         </p>
+      </div>
       </div>
     </section>
   );
